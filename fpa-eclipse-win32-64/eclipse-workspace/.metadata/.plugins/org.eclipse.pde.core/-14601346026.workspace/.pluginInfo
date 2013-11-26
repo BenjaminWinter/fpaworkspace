@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="599" class="de.bht.fpa.mail.s797399.fsnavigation.Activator" localization="OSGI-INF/l10n/bundle" name="Fsnavigation" project="de.bht.fpa.mail.s797399.fsnavigation"/>
+	<bundle bundleID="600" class="de.bht.fpa.mail.s000000.common.internal.Activator" localization="OSGI-INF/l10n/bundle" name="Common" project="de.bht.fpa.mail.common">
+		<library name="."/>
+		<library name="libs/derby.jar"/>
+		<library name="libs/eclipselink.jar"/>
+		<library name="libs/javax.persistence_2.0.3.v201010191057.jar"/>
+	</bundle>
+	<bundle bundleID="601" class="e.bht.fpa.mail.s797399.main.Activator" localization="OSGI-INF/l10n/bundle" name="Main" project="de.bht.fpa.mail.s797399.main"/>
+</map>

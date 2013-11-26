@@ -123,24 +123,23 @@ public class NavigationView extends ViewPart {
 
         ArrayList<Message> messages = new ArrayList<Message>();
         Message message = null;
-        if (xmlfiles != null) {
-          for (File xml : xmlfiles) {
-            try {
-              message = JAXB.unmarshal(xml, Message.class);
-            } catch (RuntimeException e) {
-              continue;
-            }
 
-            if (message != null) {
-              if (message.getId() != null) {
-                messages.add(message);
-              }
+        for (File xml : xmlfiles) {
+          try {
+            message = JAXB.unmarshal(xml, Message.class);
+          } catch (RuntimeException e) {
+            continue;
+          }
+
+          if (message != null) {
+            if (message.getId() != null) {
+              messages.add(message);
             }
           }
-          System.out.println("Number of Messages:  " + messages.size() + "\n");
-          for (Message msg : messages) {
-            System.out.println(msg);
-          }
+        }
+        System.out.println("Number of Messages:  " + messages.size() + "\n");
+        for (Message msg : messages) {
+          System.out.println(msg);
         }
       }
     }
