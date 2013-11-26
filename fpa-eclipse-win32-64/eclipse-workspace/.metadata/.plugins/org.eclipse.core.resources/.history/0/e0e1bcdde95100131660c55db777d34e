@@ -1,0 +1,36 @@
+package de.bht.fpa.mail.s797399.fsnavigation.handlers;
+
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.swt.widgets.DirectoryDialog;
+import org.eclipse.ui.handlers.HandlerUtil;
+
+/**
+ * Our sample handler extends AbstractHandler, an IHandler base class.
+ * 
+ * @see org.eclipse.core.commands.IHandler
+ * @see org.eclipse.core.commands.AbstractHandler
+ */
+public class BaseDirectory extends AbstractHandler {
+  /**
+   * The constructor.
+   */
+  public BaseDirectory() {
+
+  }
+
+  /**
+   * the command has been executed, so extract extract the needed information
+   * from the application context.
+   */
+  @Override
+  public Object execute(ExecutionEvent event) throws ExecutionException {
+
+    DirectoryDialog dialog = new DirectoryDialog(HandlerUtil.getActiveShell(event));
+    dialog.setMessage("Set new Base Directory1");
+    dialog.setMessage("Set new Base Directory2");
+    String result = dialog.open();
+    return result;
+  }
+}

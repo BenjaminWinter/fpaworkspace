@@ -1,0 +1,43 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: E57K/c6CJWCLMqyzqxya5Qpl9Vw=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: 6fkhi3DD8ZpRd07wufu+henWyok=
+
+Name: JUNIT.XSL
+SHA1-Digest: ctyFTYoemHgpk53YlKqL4yZ+g5A=
+
+Name: LICENSE.EPL
+SHA1-Digest: tSkuewD1TraGvJEKnzt+VI+K2aY=
+
+Name: library.xml
+SHA1-Digest: cok1XJ9K8OAvLYHQaTH4APVAhdY=
+
+Name: src/org/eclipse/swtbot/eclipse/junit3/headless/UITestApplication
+ .java
+SHA1-Digest: 67X43Gu8ChJU98084MMn+pJUIxM=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: src/org/eclipse/swtbot/eclipse/junit3/headless/EclipseTestRunner
+ .java
+SHA1-Digest: gQhA37Fa8+HBdmBJOt7dQsXhvXQ=
+
+Name: org/eclipse/swtbot/eclipse/junit3/headless/EclipseTestRunner$Tes
+ tFailedException.class
+SHA1-Digest: TX9nlnT0pE6QUA8ZDVuquk9f27U=
+
+Name: org/eclipse/swtbot/eclipse/junit3/headless/EclipseTestRunner.cla
+ ss
+SHA1-Digest: p/oVdDQOv83tvo60GO3cbzPUKVs=
+
+Name: org/eclipse/swtbot/eclipse/junit3/headless/UITestApplication.cla
+ ss
+SHA1-Digest: sKbQSWOQ4PdzhiYADG4wKaZUiFw=
+
+Name: about.html
+SHA1-Digest: a0Vxf+gEffwaALpdjhuSqBOMzIY=
+
+Name: plugin.xml
+SHA1-Digest: 5587h1BaUQV52rozYC8cioBN5VI=
+

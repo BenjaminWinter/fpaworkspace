@@ -1,0 +1,210 @@
+!SESSION 2013-11-17 19:33:05.008 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -application org.eclipse.ui.ide.workbench
+Command-line arguments:  -application org.eclipse.ui.ide.workbench -data G:\fpa-eclipse-win32-64\eclipse-workspace/../runtime-EclipseApplication -dev file:G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.osgi 2 0 2013-11-17 19:33:06.608
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.609
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.mortbay.jetty.util_6.1.23.v201012071420.jar was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.609
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.609
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.609
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.mortbay.jetty.server_6.1.23.v201012071420.jar was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.609
+!MESSAGE Missing imported package javax.servlet.http_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.609
+!MESSAGE Missing imported package javax.servlet_2.5.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.610
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.equinox.http.jetty_2.0.100.v20110502.jar was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.610
+!MESSAGE Missing imported package javax.servlet.http_[2.5.0,2.6.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.610
+!MESSAGE Missing imported package javax.servlet_[2.5.0,2.6.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.610
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.equinox.http.servlet_1.1.200.v20110502.jar was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.610
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.610
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+
+!ENTRY org.eclipse.osgi 2 0 2013-11-17 19:33:06.619
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.619
+!MESSAGE Bundle org.eclipse.equinox.http.jetty_2.0.100.v20110502 [56] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.619
+!MESSAGE Missing imported package javax.servlet_[2.5.0,2.6.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.619
+!MESSAGE Missing imported package javax.servlet.http_[2.5.0,2.6.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.619
+!MESSAGE Missing imported package org.eclipse.equinox.http.servlet_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.component_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.jetty_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.jetty.bio_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.jetty.handler_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.jetty.nio_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.jetty.security_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.620
+!MESSAGE Missing imported package org.mortbay.jetty.servlet_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.621
+!MESSAGE Missing imported package org.mortbay.log_[6.1.0,7.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.621
+!MESSAGE Bundle org.eclipse.equinox.http.servlet_1.1.200.v20110502 [57] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.621
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.621
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.621
+!MESSAGE Bundle org.mortbay.jetty.server_6.1.23.v201012071420 [153] was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.621
+!MESSAGE Missing imported package javax.servlet_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.621
+!MESSAGE Missing imported package javax.servlet.http_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing optionally imported package javax.servlet.jsp_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing optionally imported package javax.servlet.resources_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing optionally imported package org.apache.jasper.servlet_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing imported package org.mortbay.component_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing optionally imported package org.mortbay.jetty.handler.management_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing imported package org.mortbay.log_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.622
+!MESSAGE Missing imported package org.mortbay.servlet_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.623
+!MESSAGE Missing imported package org.mortbay.thread_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.623
+!MESSAGE Missing imported package org.mortbay.util_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.623
+!MESSAGE Missing imported package org.mortbay.util.ajax_6.1.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.623
+!MESSAGE Bundle org.mortbay.jetty.util_6.1.23.v201012071420 [154] was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.623
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.623
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2013-11-17 19:33:06.653
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.653
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.mortbay.jetty.util_6.1.23.v201012071420.jar was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.653
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.653
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.654
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.mortbay.jetty.server_6.1.23.v201012071420.jar was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.654
+!MESSAGE Missing imported package javax.servlet.http_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.654
+!MESSAGE Missing imported package javax.servlet_2.5.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.654
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.equinox.http.jetty_2.0.100.v20110502.jar was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.654
+!MESSAGE Missing imported package javax.servlet.http_[2.5.0,2.6.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.654
+!MESSAGE Missing imported package javax.servlet_[2.5.0,2.6.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.654
+!MESSAGE Bundle reference:file:/G:/fpa-eclipse-win32-64/eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.equinox.http.servlet_1.1.200.v20110502.jar was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.654
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.655
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+
+!ENTRY org.eclipse.osgi 2 0 2013-11-17 19:33:06.663
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.663
+!MESSAGE Bundle org.eclipse.equinox.http.jetty_2.0.100.v20110502 [56] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.663
+!MESSAGE Missing imported package javax.servlet_[2.5.0,2.6.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.663
+!MESSAGE Missing imported package javax.servlet.http_[2.5.0,2.6.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.663
+!MESSAGE Missing imported package org.eclipse.equinox.http.servlet_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.component_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.jetty_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.jetty.bio_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.jetty.handler_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.jetty.nio_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.jetty.security_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.jetty.servlet_[6.1.0,7.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2013-11-17 19:33:06.664
+!MESSAGE Missing imported package org.mortbay.log_[6.1.0,7.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.665
+!MESSAGE Bundle org.eclipse.equinox.http.servlet_1.1.200.v20110502 [57] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.665
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2013-11-17 19:33:06.665
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.665
+!MESSAGE Bundle org.mortbay.jetty.server_6.1.23.v201012071420 [153] was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.665
+!MESSAGE Missing imported package javax.servlet_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.665
+!MESSAGE Missing imported package javax.servlet.http_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.665
+!MESSAGE Missing optionally imported package javax.servlet.jsp_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing optionally imported package javax.servlet.resources_2.5.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing optionally imported package org.apache.jasper.servlet_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing imported package org.mortbay.component_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing optionally imported package org.mortbay.jetty.handler.management_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing imported package org.mortbay.log_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing imported package org.mortbay.servlet_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing imported package org.mortbay.thread_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.666
+!MESSAGE Missing imported package org.mortbay.util_6.1.0.
+!SUBENTRY 2 org.mortbay.jetty.server 2 0 2013-11-17 19:33:06.667
+!MESSAGE Missing imported package org.mortbay.util.ajax_6.1.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2013-11-17 19:33:06.667
+!MESSAGE Bundle org.mortbay.jetty.util_6.1.23.v201012071420 [154] was not resolved.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.667
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 2 org.mortbay.jetty.util 2 0 2013-11-17 19:33:06.667
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+
+!ENTRY org.eclipse.osgi 4 0 2013-11-17 19:33:06.667
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: Application "org.eclipse.ui.ide.workbench" could not be found in the registry. The applications available are: de.bht.fpa.mail.s797399.main.application, org.eclipse.ant.core.antRunner, org.eclipse.ant.ui.antRunner, org.eclipse.equinox.app.error, org.eclipse.equinox.p2.director, org.eclipse.equinox.p2.garbagecollector.application, org.eclipse.equinox.p2.publisher.InstallPublisher, org.eclipse.equinox.p2.publisher.EclipseGenerator, org.eclipse.equinox.p2.publisher.ProductPublisher, org.eclipse.equinox.p2.publisher.FeaturesAndBundlesPublisher, org.eclipse.equinox.p2.repository.repo2runnable, org.eclipse.equinox.p2.repository.metadataverifier, org.eclipse.equinox.p2.artifact.repository.mirrorApplication, org.eclipse.equinox.p2.metadata.repository.mirrorApplication, org.eclipse.equinox.p2.updatesite.UpdateSitePublisher, org.eclipse.equinox.p2.publisher.UpdateSitePublisher, org.eclipse.equinox.p2.publisher.CategoryPublisher, org.eclipse.help.base.infocenterApplication, org.eclipse.help.base.helpApplication, org.eclipse.help.base.indexTool, org.eclipse.jdt.core.JavaCodeFormatter, org.eclipse.pde.build.Build, org.eclipse.swtbot.eclipse.core.swtbottestapplication, org.eclipse.swtbot.eclipse.junit3.headless.swtbottestapplication, org.eclipse.swtbot.eclipse.junit4.headless.swtbottestapplication.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:248)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)

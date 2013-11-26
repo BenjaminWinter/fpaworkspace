@@ -1,0 +1,669 @@
+!SESSION 2012-03-25 19:47:36.797 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2012-03-25 19:51:34.932
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2012-03-25 19:51:36.694 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-03-25 19:55:31.990
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://download.eclipse.org/technology/epp/packages/indigo/artifacts.xml.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:189)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.getLocalFile(SimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:76)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:69)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:749)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:171)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:95)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:69)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:749)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:96)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:160)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:143)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:90)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:76)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:216)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:84)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:44)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.resolveWithPlanner(P2TargetUtils.java:906)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.synchronize(P2TargetUtils.java:697)
+	at org.eclipse.pde.internal.core.target.IUBundleContainer.resolveBundles(IUBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolve(AbstractBundleContainer.java:97)
+	at org.eclipse.pde.internal.core.target.TargetDefinition.resolve(TargetDefinition.java:265)
+	at org.eclipse.pde.internal.ui.editor.targetdefinition.TargetEditor$2.run(TargetEditor.java:472)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:227)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2012-03-25 19:55:32.005
+!MESSAGE Unable to read repository at http://download.eclipse.org/technology/epp/packages/indigo/artifacts.xml.
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:227)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2012-03-25 20:02:42.847
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-10-19 12:13:55.741 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-10-19 12:20:00.362
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-10-19 12:19:55.458 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-10-19 12:20:19.066
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-10-19 12:29:21.478 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-10-19 12:35:13.754
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-10-30 17:13:51.829 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-10-30 17:14:33.927
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-01 11:49:41.164 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-01 11:50:42.403
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:01:34.179
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:34.179
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.179
+!MESSAGE Software being installed: Eclipse e4 Tools Bridge for 3.x (Incubation) 0.14.0.v20130909-1436 (org.eclipse.e4.tools.e3x.bridge.feature.feature.group 0.14.0.v20130909-1436)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.179
+!MESSAGE Missing requirement: Eclipse CSS SWT Theme Support 0.9.100.v20130515-1857 (org.eclipse.e4.ui.css.swt.theme 0.9.100.v20130515-1857) requires 'bundle org.eclipse.core.runtime 3.8.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:34.179
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.179
+!MESSAGE From: Eclipse e4 Tools Bridge for 3.x (Incubation) 0.14.0.v20130909-1436 (org.eclipse.e4.tools.e3x.bridge.feature.feature.group 0.14.0.v20130909-1436)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.179
+!MESSAGE To: org.eclipse.e4.ui.css.swt.theme [0.9.100.v20130515-1857]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:01:34.184
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:34.184
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.184
+!MESSAGE Software being installed: Eclipse e4 Tools Bridge for 3.x (Incubation) 0.14.0.v20130909-1436 (org.eclipse.e4.tools.e3x.bridge.feature.feature.group 0.14.0.v20130909-1436)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.184
+!MESSAGE Missing requirement: Eclipse CSS SWT Theme Support 0.9.100.v20130515-1857 (org.eclipse.e4.ui.css.swt.theme 0.9.100.v20130515-1857) requires 'bundle org.eclipse.core.runtime 3.8.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:34.184
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.184
+!MESSAGE From: Eclipse e4 Tools Bridge for 3.x (Incubation) 0.14.0.v20130909-1436 (org.eclipse.e4.tools.e3x.bridge.feature.feature.group 0.14.0.v20130909-1436)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:34.184
+!MESSAGE To: org.eclipse.e4.ui.css.swt.theme [0.9.100.v20130515-1857]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:01:57.239
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:57.239
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.239
+!MESSAGE Software being installed: E4 Orion CSS Preference editor (Incubation) Developer Resources 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.css.editor.feature.source.feature.group 0.15.0.v20131001-2032)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.239
+!MESSAGE Missing requirement: SWT Orion Control 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.editor 0.15.0.v20131001-2032) requires 'bundle org.apache.commons.lang 2.6.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:57.239
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.239
+!MESSAGE From: E4 Orion CSS Preference editor (Incubation) 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.css.editor.feature.feature.group 0.15.0.v20131001-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.239
+!MESSAGE To: org.eclipse.e4.tools.orion.editor [0.15.0.v20131001-2032]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:57.239
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.239
+!MESSAGE From: E4 Orion CSS Preference editor (Incubation) Developer Resources 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.css.editor.feature.source.feature.group 0.15.0.v20131001-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.239
+!MESSAGE To: org.eclipse.e4.tools.orion.css.editor.feature.feature.group [0.15.0.v20131001-2032]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:01:57.240
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:57.240
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.240
+!MESSAGE Software being installed: E4 Orion CSS Preference editor (Incubation) Developer Resources 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.css.editor.feature.source.feature.group 0.15.0.v20131001-2032)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.240
+!MESSAGE Missing requirement: SWT Orion Control 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.editor 0.15.0.v20131001-2032) requires 'bundle org.apache.commons.lang 2.6.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:57.240
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.240
+!MESSAGE From: E4 Orion CSS Preference editor (Incubation) 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.css.editor.feature.feature.group 0.15.0.v20131001-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.240
+!MESSAGE To: org.eclipse.e4.tools.orion.editor [0.15.0.v20131001-2032]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:01:57.240
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.241
+!MESSAGE From: E4 Orion CSS Preference editor (Incubation) Developer Resources 0.15.0.v20131001-2032 (org.eclipse.e4.tools.orion.css.editor.feature.source.feature.group 0.15.0.v20131001-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:01:57.241
+!MESSAGE To: org.eclipse.e4.tools.orion.css.editor.feature.feature.group [0.15.0.v20131001-2032]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:11.465
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:11.465
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.465
+!MESSAGE Software being installed: E4 CSS editor (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.465
+!MESSAGE Missing requirement: org.eclipse.e4.tools.css.editor.ui 0.12.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.ui 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.model.workbench 0.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:11.465
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.465
+!MESSAGE From: E4 CSS editor (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.feature.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.465
+!MESSAGE To: org.eclipse.e4.tools.css.editor.ui [0.12.0.v20130814-1230]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:11.465
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.465
+!MESSAGE From: E4 CSS editor (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.465
+!MESSAGE To: org.eclipse.e4.tools.css.editor.feature.feature.group [0.14.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:11.466
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:11.466
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.466
+!MESSAGE Software being installed: E4 CSS editor (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.466
+!MESSAGE Missing requirement: org.eclipse.e4.tools.css.editor.ui 0.12.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.ui 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.model.workbench 0.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:11.466
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.466
+!MESSAGE From: E4 CSS editor (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.feature.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.466
+!MESSAGE To: org.eclipse.e4.tools.css.editor.ui [0.12.0.v20130814-1230]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:11.466
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.466
+!MESSAGE From: E4 CSS editor (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.editor.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:11.466
+!MESSAGE To: org.eclipse.e4.tools.css.editor.feature.feature.group [0.14.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:17.496
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:17.496
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.496
+!MESSAGE Software being installed: E4 Event Spy (Incubation) 0.15.0.v20130814-1533 (org.eclipse.e4.tools.event.spy.feature.feature.group 0.15.0.v20130814-1533)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.496
+!MESSAGE Missing requirement: org.eclipse.e4.tools.event.spy 0.15.0.v20130814-1533 requires 'bundle org.eclipse.e4.ui.workbench 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:17.496
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.496
+!MESSAGE From: E4 Event Spy (Incubation) 0.15.0.v20130814-1533 (org.eclipse.e4.tools.event.spy.feature.feature.group 0.15.0.v20130814-1533)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.496
+!MESSAGE To: org.eclipse.e4.tools.event.spy [0.15.0.v20130814-1533]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:17.497
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:17.497
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.497
+!MESSAGE Software being installed: E4 Event Spy (Incubation) 0.15.0.v20130814-1533 (org.eclipse.e4.tools.event.spy.feature.feature.group 0.15.0.v20130814-1533)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.497
+!MESSAGE Missing requirement: org.eclipse.e4.tools.event.spy 0.15.0.v20130814-1533 requires 'bundle org.eclipse.e4.ui.workbench 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:17.497
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.497
+!MESSAGE From: E4 Event Spy (Incubation) 0.15.0.v20130814-1533 (org.eclipse.e4.tools.event.spy.feature.feature.group 0.15.0.v20130814-1533)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:17.497
+!MESSAGE To: org.eclipse.e4.tools.event.spy [0.15.0.v20130814-1533]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:22.058
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:22.058
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:22.058
+!MESSAGE Software being installed: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:22.058
+!MESSAGE Missing requirement: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230) requires 'org.eclipse.jface 3.8.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:22.059
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:22.059
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:22.059
+!MESSAGE Software being installed: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:22.059
+!MESSAGE Missing requirement: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230) requires 'org.eclipse.jface 3.8.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:27.779
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:27.779
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.779
+!MESSAGE Software being installed: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.779
+!MESSAGE Missing requirement: Editor3x 0.12.0.v20130814-1230 (org.eclipse.e4.tools.emf.editor3x 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:27.779
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.779
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.779
+!MESSAGE To: org.eclipse.e4.tools.emf.editor3x [0.12.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:02:27.780
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:27.780
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.780
+!MESSAGE Software being installed: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.780
+!MESSAGE Missing requirement: Editor3x 0.12.0.v20130814-1230 (org.eclipse.e4.tools.emf.editor3x 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:02:27.780
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.780
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:02:27.780
+!MESSAGE To: org.eclipse.e4.tools.emf.editor3x [0.12.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:04:35.400
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:35.400
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:35.400
+!MESSAGE Software being installed: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:35.400
+!MESSAGE Missing requirement: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230) requires 'org.eclipse.jface 3.8.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:04:35.403
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:35.403
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:35.403
+!MESSAGE Software being installed: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:35.403
+!MESSAGE Missing requirement: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230) requires 'org.eclipse.jface 3.8.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:04:48.254
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:48.254
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.254
+!MESSAGE Software being installed: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.254
+!MESSAGE Missing requirement: Tools 0.12.0.v20131021-0817 (org.eclipse.e4.tools 0.12.0.v20131021-0817) requires 'bundle org.eclipse.e4.ui.model.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:48.254
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.254
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.254
+!MESSAGE To: org.eclipse.e4.tools [0.12.0.v20131021-0817]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:48.254
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.254
+!MESSAGE From: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.254
+!MESSAGE To: org.eclipse.e4.core.tools.feature.feature.group [0.14.0.v20131029-2059]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:04:48.255
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:48.255
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.255
+!MESSAGE Software being installed: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.255
+!MESSAGE Missing requirement: Tools 0.12.0.v20131021-0817 (org.eclipse.e4.tools 0.12.0.v20131021-0817) requires 'bundle org.eclipse.e4.ui.model.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:48.255
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.255
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.255
+!MESSAGE To: org.eclipse.e4.tools [0.12.0.v20131021-0817]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:48.255
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.255
+!MESSAGE From: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:48.255
+!MESSAGE To: org.eclipse.e4.core.tools.feature.feature.group [0.14.0.v20131029-2059]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:04:51.930
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:51.930
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.930
+!MESSAGE Software being installed: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.930
+!MESSAGE Missing requirement: Tools 0.12.0.v20131021-0817 (org.eclipse.e4.tools 0.12.0.v20131021-0817) requires 'bundle org.eclipse.emf.ecore 2.9.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:51.930
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.930
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.930
+!MESSAGE To: org.eclipse.e4.tools [0.12.0.v20131021-0817]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:51.930
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.930
+!MESSAGE From: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.931
+!MESSAGE To: org.eclipse.e4.core.tools.feature.feature.group [0.14.0.v20131029-2059]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:04:51.931
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:51.931
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.931
+!MESSAGE Software being installed: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.931
+!MESSAGE Missing requirement: Tools 0.12.0.v20131021-0817 (org.eclipse.e4.tools 0.12.0.v20131021-0817) requires 'bundle org.eclipse.emf.ecore 2.9.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:51.931
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.931
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.931
+!MESSAGE To: org.eclipse.e4.tools [0.12.0.v20131021-0817]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:04:51.931
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.932
+!MESSAGE From: Eclipse e4 Tools Source (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.source.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:04:51.932
+!MESSAGE To: org.eclipse.e4.core.tools.feature.feature.group [0.14.0.v20131029-2059]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:05:00.967
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:05:00.967
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.967
+!MESSAGE Software being installed: E4 CSS Spy (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.967
+!MESSAGE Missing requirement: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230) requires 'org.eclipse.jface 3.8.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:05:00.967
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.967
+!MESSAGE From: E4 CSS Spy (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.967
+!MESSAGE To: org.eclipse.e4.tools.css.spy.feature.feature.group [0.14.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:05:00.968
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:05:00.968
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.968
+!MESSAGE Software being installed: E4 CSS Spy (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.968
+!MESSAGE Missing requirement: E4 CSS Spy (Incubation) 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.feature.group 0.14.0.v20130814-1230) requires 'org.eclipse.jface 3.8.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:05:00.968
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.968
+!MESSAGE From: E4 CSS Spy (Incubation) Developer Resources 0.14.0.v20130814-1230 (org.eclipse.e4.tools.css.spy.feature.source.feature.group 0.14.0.v20130814-1230)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:05:00.968
+!MESSAGE To: org.eclipse.e4.tools.css.spy.feature.feature.group [0.14.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:15:39.535
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:15:39.535
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.535
+!MESSAGE Software being installed: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.535
+!MESSAGE Missing requirement: Editor3x 0.12.0.v20130814-1230 (org.eclipse.e4.tools.emf.editor3x 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:15:39.535
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.535
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.535
+!MESSAGE To: org.eclipse.e4.tools.emf.editor3x [0.12.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:15:39.537
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:15:39.537
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.537
+!MESSAGE Software being installed: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.537
+!MESSAGE Missing requirement: Editor3x 0.12.0.v20130814-1230 (org.eclipse.e4.tools.emf.editor3x 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:15:39.537
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.537
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:15:39.537
+!MESSAGE To: org.eclipse.e4.tools.emf.editor3x [0.12.0.v20130814-1230]
+!SESSION 2013-11-01 12:16:24.139 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:18:28.775
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:18:28.775
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.775
+!MESSAGE Software being installed: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.775
+!MESSAGE Missing requirement: Editor3x 0.12.0.v20130814-1230 (org.eclipse.e4.tools.emf.editor3x 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:18:28.775
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.775
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.775
+!MESSAGE To: org.eclipse.e4.tools.emf.editor3x [0.12.0.v20130814-1230]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-11-01 12:18:28.779
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:18:28.779
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.779
+!MESSAGE Software being installed: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.779
+!MESSAGE Missing requirement: Editor3x 0.12.0.v20130814-1230 (org.eclipse.e4.tools.emf.editor3x 0.12.0.v20130814-1230) requires 'bundle org.eclipse.e4.ui.workbench 0.9.1' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-11-01 12:18:28.779
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.779
+!MESSAGE From: Eclipse e4 Tools (Incubation) 0.14.0.v20131029-2059 (org.eclipse.e4.core.tools.feature.feature.group 0.14.0.v20131029-2059)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-11-01 12:18:28.779
+!MESSAGE To: org.eclipse.e4.tools.emf.editor3x [0.12.0.v20130814-1230]
+
+!ENTRY org.eclipse.ui 4 4 2013-11-01 12:22:22.812
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-03 14:09:38.084 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-03 14:17:24.748
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-08 14:05:13.906 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-08 14:06:59.115
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-10 21:24:04.914 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.core.resources 4 380 2013-11-10 22:02:14.165
+!MESSAGE The resource tree is locked for modifications.
+
+!ENTRY org.eclipse.ui 4 4 2013-11-10 22:02:35.253
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-11 12:04:28.585 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-11 12:53:22.387
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-11 13:08:45.344 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-11 13:33:06.823
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-11 13:35:14.552 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-11 13:38:24.471
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-17 19:19:31.912 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-17 19:39:08.466
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-17 21:33:26.370 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-17 21:52:03.788
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-18 12:18:12.021 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-18 12:19:22.417
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-19 01:54:17.404 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-19 02:04:22.075
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-20 14:02:33.316 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-20 15:04:24.273
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2013-11-26 15:04:54.282 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 4 4 2013-11-26 16:14:43.407
+!MESSAGE Invalid preference page path: XML Syntax

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;de.bht.fpa.mail.s797399.fsnavigation&apos;" deleteContents="true" description="Delete resource &apos;de.bht.fpa.mail.s797399.fsnavigation&apos;" element1="/de.bht.fpa.mail.s797399.fsnavigation" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1384115087644"/>
+</session>

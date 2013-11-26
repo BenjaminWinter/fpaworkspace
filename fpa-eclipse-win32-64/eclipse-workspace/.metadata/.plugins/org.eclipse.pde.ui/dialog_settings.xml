@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="OrganizeManifests.ExportedPackages.addMissing"/>
+	<item value="false" key="OrganizeManifests.calculateUses"/>
+	<item value="false" key="generateActivator"/>
+	<item value="false" key="uiPlugin"/>
+	<item value="false" key="OrganizeManifests.RequireImport.modifyDep"/>
+	<item value="false" key="OrganizeManifests.Translation.nls"/>
+	<item value="false" key="apiAnalysis"/>
+	<item value="false" key="OrganizeManifests.Translation.unusedKeys"/>
+	<item value="false" key="osgiProject"/>
+	<item value="" key="targetName"/>
+	<item value="*.internal*" key="OrganizeManifests.ExportedPackages.packageFilter"/>
+	<item value="false" key="OrganizeManifests.General.cleanup"/>
+	<item value="false" key="OrganizeManifests.AddDependencies"/>
+	<item value="false" key="OrganizeManifests.ExportedPackages.makeInternal"/>
+	<item value="false" key="rcpPlugin"/>
+	<item value="false" key="OrganizeManifests.RequireImport.findRemoveUnused"/>
+	<item value="false" key="OrganizeManifests.ExportedPackages.removeUnresolved"/>
+	<item value="false" key="OrganizeManifests.RequireImport.resolve:markOptional"/>
+	<item value="false" key="OrganizeManifests.General.cleanup.removeUselessFiles"/>
+	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="180" key="DIALOG_Y_ORIGIN"/>
+			<item value="548" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="PluginExportWizard">
+	</section>
+	<section name="RefactoringWizard.Organize Manifests">
+		<item value="434" key="height"/>
+		<item value="600" key="width"/>
+	</section>
+	<section name="editBundleContainerWizard">
+		<item value="true" key="groupByCategory"/>
+		<item value="true" key="showVersions"/>
+		<item value="http://download.eclipse.org/releases/indigo/" key="selectedRepository"/>
+	</section>
+	<section name="pluginsView">
+	</section>
+</section>
