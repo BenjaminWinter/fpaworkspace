@@ -1,7 +1,9 @@
 package de.bht.fpa.mail.s797399.fsnavigation;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import javax.xml.bind.JAXB;
@@ -87,9 +89,19 @@ public class NavigationView extends ViewPart {
     public void postExecuteSuccess(String commandId, Object returnValue) {
       if (returnValue != null) {
         viewer.setInput(returnValue);
-        // viewer.collapseAll();
-        // viewer.refresh();
+
+        PrintWriter printWriter = null;
+        try {
+          // Will overwrite the file if exists or creates new
+          printWriter = new PrintWriter(System.getProperty("user.home") + "lastdir.txt");
+          printWriter.println(returnValue);
+        } catch (FileNotFoundException fileNotFoundException) {
+          fileNotFoundException.printStackTrace();
+        } finally {
+          printWriter.close();
+        }
       }
+
     }
 
     @Override
@@ -137,7 +149,7 @@ public class NavigationView extends ViewPart {
               }
             }
           }
-          System.out.println("Number of Messages:  " + messages.size() + "\n");
+          System.out.println("Number of Messages:  " + messages.size() + "\n \n");
           for (Message msg : messages) {
             System.out.println(msg);
           }

@@ -1,7 +1,11 @@
 package de.bht.fpa.mail.s797399.fsnavigation;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FilenameFilter;
+import java.io.IOException;
 
 import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.jface.viewers.Viewer;
@@ -59,7 +63,27 @@ public class ViewContentProvider implements ITreeContentProvider {
   }
 
   @Override
-  public Object[] getElements(Object input) {
+  public Object[] getElements(Object startdir) {
+    File file = new File(System.getProperty("user.home") + "lastdir.txt");
+    BufferedReader reader = null;
+    String lastdir = null;
+    try {
+      reader = new BufferedReader(new FileReader(file));
+      lastdir = reader.readLine();
+
+    } catch (FileNotFoundException e) {
+      System.err.println("coulnt find file lastdir, propably first start");
+    } catch (IOException e) {
+      System.err.println("IOException while reading file lastdir");
+    } finally {
+      try {
+        if (reader != null) {
+          reader.close();
+        }
+      } catch (IOException e) {
+      }
+    }
+    Object input = lastdir == null ? startdir : lastdir;
     File[] userdirectory = new File((String) input).listFiles(new FilenameFilter() {
       @Override
       public boolean accept(File dir, String name) {
